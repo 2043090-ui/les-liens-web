@@ -4,6 +4,9 @@
 
 html {
   box-sizing: border-box;
+
+   scroll-behavior: smooth;
+
 }
 
 *,
@@ -16,98 +19,81 @@ html {
    Base
 ------------------------------------------------------------------------------*/
 
-body{
-   background: black url(../images/fond/global.png) repeat;
+body {
+  background: black url(../images/fond/global.png) repeat;
 
-   font: 1rem "Oranienbaum", serif;
+  font: 1rem "Oranienbaum", serif;
 
-   color: white;
+  color: white;
 
 
 }
 
-
-
-a{
-   color: white;
-   text-decoration: none;
-   }
-
-a:hover{
-
-color: darkorange;
-
+a {
+  color: white;
+  text-decoration: none;
 }
 
+a:hover {
+  color: darkorange;
+}
 
 a img {
-   width: 100%;
-   padding-bottom: 10px;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
-
-h1{
-   font: 6.25rem "Monoton", sans-serif;
+h1 {
+  font: 6.25rem "Monoton", sans-serif;
 }
 
-h2{
-   font: 2rem "Monoton", sans-serif;
-   margin: 0;
-   padding: 0;
+h2 {
+  font: 2rem "Monoton", sans-serif;
+  margin: 0;
+  padding: 0;
 
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-h2 span{
-   font: 1.625rem "Oranienbaum", serif;
-   text-transform: capitalize;
+h2 span {
+  font: 1.625rem "Oranienbaum", serif;
+  text-transform: capitalize;
 }
 
 a[hreflang="ja"]::after {
-    content: " [en japonais]";
+  content: " [en japonais]";
 }
-
 
 /*------------------------------------------------------------------------------
    Mise en page
 ------------------------------------------------------------------------------*/
 
+header,
+section {
+  height: 100vh;
 
-header, section{
-
-   height: 100vh;
-
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.sports{
-   background: url(../images/fond/bicycles.png);
+.sports {
+  background: url(../images/fond/bicycles.png) fixed;
 }
 
-.web{
-   background: url(../images/fond/science.png);
+.web {
+  background: url(../images/fond/science.png) fixed;
 }
 
-.photos{
-   background: url(../images/fond/fond.jpg) no-repeat;
+.photos {
+  background: url(../images/fond/fond.jpg) no-repeat fixed;
 
-   background-size: cover;
+  background-size: cover;
 }
-
-
 
 /*----------------------------------------------------------------------------
     Elements
 ----------------------------------------------------------------------------*/
-
-
-
-
 
 /*------------------------------------------------------------------------------
    Components
@@ -115,120 +101,120 @@ header, section{
 
 /* Header */
 
-
-
-
-header{
-
-   text-align: center;
-   position: relative;
+header {
+  text-align: center;
+  position: relative;
 }
 
-header a{
-   position: absolute;
-   bottom: 40px;
-   left: 45%;
+header a {
+  position: absolute;
+  bottom: 40px;
+  left: 45%;
 
-
-   display: flex;
-   align-items: center;
-
+  display: flex;
+  align-items: center;
 }
-
 
 /* Section Générale */
 
+.boite {
+  width: 800px;
 
-.boite{
-   
-   
-   width: 800px;
+  padding: 48px;
 
-   padding: 48px;
-
-   background-color: rgba(0, 0, 0, 0.8);
-   border-radius: 10px;
-
-
-   
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
 }
-
 
 /* Section sports */
 
-
-.images{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 20px;
-
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .images a {
-   width: 200px;
-   margin: 10px auto;
+  width: 200px;
+  margin: 10px auto;
 
-   text-align: center;
+  text-align: center;
 }
-
-
-
 
 /* Section web */
 
-.web img{
-   width: 50%;
-
+.web img {
+  width: 50%;
 }
 
-.web span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-  padding-bottom: 50px
+.web span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 50px;
 }
 
-.lien_float{
-   background-color: darkred;
+.lien_float {
+  background-color: darkred;
 
-   padding: 10px;
+  padding: 10px;
 
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.lien_float a:hover {
+  color: white;
 
-
-
-.lien_float a:hover{
-   color: white;
-
-   text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Section photographie */
 
-.photos img{
-
-   width: 30%;
+.photos img {
+  width: 30%;
 }
 
-.photos a{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
+.photos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.photos .images{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
+.photos .images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
 
 /* Bouton retour */
+
+.haut {
+  height: 40px;
+  width: 40px;
+
+  background-color: rgba(225, 225, 255, 0.8);
+
+  border: 4px white solid;
+
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 20px;
+  right: 15vh;
+
+}
+
+.haut:hover{
+   color:darkorange;
+   border-color: darkorange;
+}
