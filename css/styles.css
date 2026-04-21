@@ -16,9 +16,54 @@ html {
    Base
 ------------------------------------------------------------------------------*/
 
+body{
+   background: black url(../images/fond/global.png) repeat;
+
+   font: 1rem "Oranienbaum", serif;
+
+   color: white;
+
+
+}
+
+
+a{
+   color: white;
+   text-decoration: none;
+   }
+
+a:hover{
+
+color: darkorange;
+
+}
+
+
+
 /*------------------------------------------------------------------------------
    Mise en page
 ------------------------------------------------------------------------------*/
+
+header, section{
+
+   height: 100vh;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.boite{
+
+   width: 800px;
+
+   padding: 48px;
+
+   background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 10px;
+}
+
 
 /*----------------------------------------------------------------------------
     Elements
