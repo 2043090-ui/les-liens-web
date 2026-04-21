@@ -63,6 +63,10 @@ h2 span{
    text-transform: capitalize;
 }
 
+a[hreflang="ja"]::after {
+    content: " [en japonais]";
+}
+
 
 /*------------------------------------------------------------------------------
    Mise en page
@@ -89,9 +93,14 @@ header, section{
    background: url(../images/fond/science.png);
 }
 
-.web img{
-   width: 50%;
+.photos{
+   background: url(../images/fond/fond.jpg) no-repeat;
+
+   background-size: cover;
 }
+
+
+
 /*----------------------------------------------------------------------------
     Elements
 ----------------------------------------------------------------------------*/
@@ -129,7 +138,6 @@ header a{
 
 /* Section Générale */
 
-/* Section sports */
 
 .boite{
    
@@ -144,6 +152,9 @@ header a{
 
    
 }
+
+
+/* Section sports */
 
 
 .images{
@@ -166,6 +177,58 @@ header a{
 
 /* Section web */
 
+.web img{
+   width: 50%;
+
+}
+
+.web span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  padding-bottom: 50px
+}
+
+.lien_float{
+   background-color: darkred;
+
+   padding: 10px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+
+.lien_float a:hover{
+   color: white;
+
+   text-decoration: underline;
+}
+
 /* Section photographie */
+
+.photos img{
+
+   width: 30%;
+}
+
+.photos a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.photos .images{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
 
 /* Bouton retour */
